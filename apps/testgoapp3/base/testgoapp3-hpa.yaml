@@ -1,0 +1,16 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: testgoapp3-hpa
+  labels:
+    app: testgoapp3
+    version: 0.0.1
+    backstage.io/kubernetes-id: testgoapp3
+spec:
+ scaleTargetRef:
+   apiVersion: apps/v1
+   kind: Deployment
+   name: testgoapp3
+ minReplicas: 1
+ maxReplicas: 4
+ targetCPUUtilizationPercentage: 75
