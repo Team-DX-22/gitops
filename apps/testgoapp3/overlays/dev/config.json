@@ -1,0 +1,13 @@
+
+
+{
+    "appName": "testgoapp3",
+    "userGivenName": "testgoapp3",
+    "destNamespace": "testgoapp3",
+    "destServer": "https://kubernetes.default.svc",
+    "srcPath": "apps/testgoapp3/overlays/dev",
+    "srcRepoURL": "https://github.com/Team-DX-22/gitops.git",
+    "srcTargetRevision": "",
+    "CreateNamespace": true,
+    "labels": null
+  }

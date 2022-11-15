@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: testgoapp3-svc
+  namespace: testgoapp3
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: testgoapp3.demo.fisdev.link
+  labels:
+    app: testgoapp3
+    version: 0.0.1
+    backstage.io/kubernetes-id: testgoapp3
+spec:
+  type: ClusterIP
+  ports:
+  - name: tcp-node
+    port: 8080
+  selector:
+    app: testgoapp3
