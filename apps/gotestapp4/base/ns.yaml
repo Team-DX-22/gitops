@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: gotestapp4
+  labels:
+    kubernetes.io/metadata.name: gotestapp4
+    backstage.io/kubernetes-id: gotestapp4
+    istio-injection: enabled
+spec:
+  finalizers:
+  - kubernetes

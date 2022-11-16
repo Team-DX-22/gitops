@@ -1,0 +1,21 @@
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: gotestapp4-vs
+  namespace: gotestapp4
+  labels:
+    app: gotestapp4
+    version: 0.0.1
+    backstage.io/kubernetes-id: gotestapp4
+spec:
+  gateways:
+  - istio-system/istio-ingressgateway
+  hosts:
+  - gotestapp4.demo.fisdev.link
+  http:
+  - name: primary
+    route:
+    - destination:
+        host: gotestapp4-svc
+      weight: 100
