@@ -1,0 +1,16 @@
+---
+kind: ResourceQuota
+apiVersion: v1
+metadata:
+  name: gotestapp4-quota
+  namespace: gotestapp4
+  labels:
+    kubernetes.io/metadata.name: gotestapp4
+    backstage.io/kubernetes-id: gotestapp4
+    istio-injection: enabled
+spec:
+  hard:
+    requests.cpu: "1"
+    requests.memory: 1Gi
+    limits.cpu: "2"
+    limits.memory: 2Gi
