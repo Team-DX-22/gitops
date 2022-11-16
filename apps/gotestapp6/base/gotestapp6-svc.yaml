@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gotestapp6-svc
+  namespace: gotestapp6
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: gotestapp6.demo.fisdev.link
+  labels:
+    app: gotestapp6
+    version: 0.0.1
+    backstage.io/kubernetes-id: gotestapp6
+spec:
+  type: ClusterIP
+  ports:
+  - name: tcp-node
+    port: 8080
+  selector:
+    app: gotestapp6
