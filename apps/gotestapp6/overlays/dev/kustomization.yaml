@@ -4,4 +4,4 @@ resources:
 - ../../base
 images:
 - name: jaydeepfis/gotestapp6
-  newTag: latest
+  newTag: a6a0bdad
