@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gosampleappfinaldemo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gosampleappfinaldemo
+  template:
+    metadata:
+      labels:
+        app: gosampleappfinaldemo
+    spec:
+      containers:
+      - name: webserver-simple
+        image: docker.io/jaydeepfis/gosampleappfinaldemo:latest
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gosampleappfinaldemo-svc
+spec:
+  selector:
+    app: gosampleappfinaldemo
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
