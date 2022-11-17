@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: goappdemo1
-        image: jaydeepfis/goappdemo1:latest
+        image: docker.io/jaydeepfis/goappdemo1:latest
         imagePullPolicy: IfNotPresent
         resources:
           requests:
