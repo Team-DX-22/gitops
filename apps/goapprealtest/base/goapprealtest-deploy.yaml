@@ -4,7 +4,7 @@ apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
   name: goapprealtest
-  namespace: goapprealtest
+  namespace: default
   labels:
     app: goapprealtest
     version: 0.0.1
