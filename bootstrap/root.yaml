@@ -29,6 +29,8 @@ spec:
       selfHeal: true
     syncOptions:
     - allowEmpty=true
+    - CreateNamespace=true
+    - ApplyOutOfSyncOnly=true
 status:
   health: {}
   summary: {}
