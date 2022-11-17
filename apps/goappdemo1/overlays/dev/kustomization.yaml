@@ -4,4 +4,4 @@ resources:
 - ../../base
 images:
 - name: jaydeepfis/goappdemo1
-  newTag: latest
+  newTag: b2c441c5
