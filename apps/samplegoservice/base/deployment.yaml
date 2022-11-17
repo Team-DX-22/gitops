@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: samplegoservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: samplegoservice
+  template:
+    metadata:
+      labels:
+        app: samplegoservice
+    spec:
+      containers:
+      - name: webserver-simple
+        image: docker.io/jaydeepfis/samplegoservice:latest
+        ports:
+        - containerPort: 8080
