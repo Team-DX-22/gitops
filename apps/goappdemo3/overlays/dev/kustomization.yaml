@@ -5,3 +5,5 @@ resources:
 images:
 - name: docker.io/jaydeepfis/goappdemo3
   newTag: latest
+- name: jaydeepfis/goappdemo3
+  newTag: 2367a188
