@@ -3,7 +3,7 @@ kind: ResourceQuota
 apiVersion: v1
 metadata:
   name: goapprealtest-quota
-  namespace: goapprealtest
+  namespace: default
   labels:
     kubernetes.io/metadata.name: goapprealtest
     backstage.io/kubernetes-id: goapprealtest
