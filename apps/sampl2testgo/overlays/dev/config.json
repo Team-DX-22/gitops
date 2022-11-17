@@ -1,0 +1,11 @@
+{
+  "appName": "sampl2testgo",
+  "userGivenName": "sampl2testgo",
+  "destNamespace": "default",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/sampl2testgo/overlays/dev",
+  "srcRepoURL": "https://github.com/Team-DX-22/gitops.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
