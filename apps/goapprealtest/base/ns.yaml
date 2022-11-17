@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: goapprealtest
+  labels:
+    kubernetes.io/metadata.name: goapprealtest
+    backstage.io/kubernetes-id: goapprealtest
+    istio-injection: enabled
+spec:
+  finalizers:
+  - kubernetes
