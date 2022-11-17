@@ -3,7 +3,6 @@ kind: ResourceQuota
 apiVersion: v1
 metadata:
   name: goappdemo1-quota
-  namespace: goappdemo1
   labels:
     kubernetes.io/metadata.name: goappdemo1
     backstage.io/kubernetes-id: goappdemo1
