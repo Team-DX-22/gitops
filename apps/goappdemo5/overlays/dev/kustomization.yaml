@@ -4,4 +4,4 @@ resources:
 - ../../base
 images:
 - name: docker.io/jaydeepfis/goappdemo5
-  newTag: latest
+  newTag: be9f000f
