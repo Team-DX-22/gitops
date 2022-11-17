@@ -1,7 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- ../../base
-images:
-- name: jaydeepfis/goapprealtest
-  newTag: 5015af8f
