@@ -4,4 +4,4 @@ resources:
 - ../../base
 images:
 - name: jaydeepfis/goapprealtest
-  newTag: latest
+  newTag: 5015af8f
