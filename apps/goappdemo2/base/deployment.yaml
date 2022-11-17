@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goappdemo2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: goappdemo2
+  template:
+    metadata:
+      labels:
+        app: goappdemo2
+    spec:
+      containers:
+      - name: webserver-simple
+        image: docker.io/goappdemo2:latest
+        ports:
+        - containerPort: 8080
